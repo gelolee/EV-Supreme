@@ -1,0 +1,144 @@
+/*
+ Theme Name:   bootScore Child
+ Description:  bootScore Child Theme
+ Author:       bootScore
+ Author URI:   https://bootscore.me
+ Template:     bootscore-main
+ Version:      5.3.0
+ Text Domain:  bootscore
+*/
+
+/* 
+All style editing is done via scss/_bscore_custom.scss
+*/
+@font-face{
+    font-family: 'BigNoodle';
+    src: url(fonts/BigNoodleTitling/big_noodle_titling.ttf);
+}
+
+@font-face{
+    font-family: 'Bebasnueu';
+    src: url(fonts/BebasNueu/BebasNeue-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Mulish regular';
+    src: url(fonts/Mulish/static/Mulish-Regular.ttf); font-display: swap;
+}
+@font-face{
+    font-family: 'Mulish regular';
+    src: url(fonts/Mulish/static/Mulish-Regular.ttf); font-display: swap;
+}
+@font-face{
+    font-family: 'Mulish semibold';
+    src: url(fonts/Mulish/static/Mulish-SemiBold.ttf); font-display: swap;
+}
+@font-face{
+    font-family: 'Mulish light';
+    src: url(fonts/Mulish/static/Mulish-Light.ttf); font-display: swap;
+}
+
+
+@font-face{
+    font-family: 'Hvd light';
+    src: url(fonts/HvDTrialBrandonGrotesque/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf); font-display: swap;
+}
+
+@font-face{
+    font-family: 'Futura bold';
+    src: url(fonts/Futura/FuturaBoldfont.ttf); font-display: swap;
+}
+@font-face{
+    font-family: 'Futura bold italic';
+    src: url(fonts/Futura/FuturaBoldItalicfont.ttf); font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+/* Navbar */
+.fixed-top .top-bar {width: 100%; height: 24px; background: #61D6FB; }
+.fixed-top .navbar{ background: #1B1F23; }
+.fixed-top .navbar .offcanvas ul li a{ padding: 0; position: relative; color: #FFFFFF; text-transform: uppercase; font-family: 'Mulish regular'; opacity: 1;}
+.fixed-top .navbar .offcanvas-body ul li a::after { content: ""; position: absolute; background-color: #CFFF04; height: 2px; width: 0; left: 0; bottom: 1px; transition: .3s; opacity: .7;}
+.fixed-top .navbar .offcanvas-body ul li a:hover:after { width: 100%; }
+.fixed-top .navbar .offcanvas ul { gap: 35px;}
+.fixed-top .navbar .offcanvas-body { justify-content: center; margin-right: 6em;}
+
+
+/* Footer */
+.bootscore-footer { background: #222222; }
+.bootscore-footer .row .footer-1 .content { display: grid; margin-top: 1.5em; }
+.bootscore-footer .row .footer-1 .content span { color: #FFFFFF; font-family: 'Montserrat';}
+.bootscore-footer .row .footer-1 .content .fol-low { font-size: 18px; margin-bottom: .5em; letter-spacing: .9px; opacity: 1; font-family: 'Hvd light';}
+.bootscore-footer .row .footer-1 .content .promos { font-size: 14px; margin-bottom: .5em; letter-spacing: .8px; opacity: 1; font-family: 'Hvd light';}
+.bootscore-footer .row .footer-1 .content .soc-med { font-size: 27px; }
+.bootscore-footer .row .footer-1 .content .fa-brands.fa-facebook { margin-right: 5px; }
+.bootscore-footer .row .footer-2 { display: grid; justify-content: center; }
+.bootscore-footer .row .footer-2 .footer_widget h2 { display: none; }
+.bootscore-footer .row .footer-2 .footer_widget ul li a {opacity: 1; letter-spacing: .8px; text-transform: uppercase; text-decoration: none; font-size: 14px; font-family: 'Mulish light'; color: #FFFFFF;}
+.bootscore-footer .row .footer-2 .footer_widget ul li a:hover { color:#02D6FC ; }
+.bootscore-footer .row .footer-2 .footer_widget ul { display: grid; gap: 21px; }
+.bootscore-footer .row .footer-2 .menu-ev-footer-container { margin-top: 12px; }
+.bootscore-footer .row .footer-3 h2 { display: none; }
+.bootscore-footer .row .footer-3 .footer_widget ul li a { opacity: 1; letter-spacing: .8px; text-transform: uppercase; text-decoration: none; font-size: 14px; font-family: 'Mulish light'; color: #FFFFFF;}
+.bootscore-footer .row .footer-3 .footer_widget ul li a:hover { color:#02D6FC ; }
+.bootscore-footer .row .footer-3 .footer_widget ul { display: grid; gap: 21px; }
+.bootscore-footer .row .footer-3 .menu-ev-footer2-container { margin-top: 12px; }
+.bootscore-footer .row .footer-3 { display: grid; justify-content: center; }
+.bootscore-footer .row .footer-4 h2 { display: none; }
+.bootscore-footer .row .footer-4 .footer_widget ul li a { opacity: 1; letter-spacing: .8px; text-transform: uppercase; text-decoration: none; font-size: 14px; font-family: 'Mulish light'; color: #FFFFFF;}
+.bootscore-footer .row .footer-4 .footer_widget ul li a:hover { color:#02D6FC ; }
+.bootscore-footer .row .footer-4 .footer_widget ul { display: grid; gap: 21px; }
+.bootscore-footer .row .footer-4 .menu-ev-footer3-container { margin-top: 12px; }
+.bootscore-footer .row .footer-4 { display: grid; justify-content: center; }
+.bootscore-info { background: #222222; color: #FFFFFF; }
+.bootscore-info .bootscore-copyright span { font-family: 'Hvd light'; font-size: 13px; letter-spacing: .7px; opacity: 1;}
+
+/* Homepage */
+.site-main .vid-banner video{ width: 100%; padding-top: 104px;}
+
+/* Section2 */
+.part-2 { background: #1B1F23; position: relative; height: 1400px;}
+.part-2 img { display: block; margin: 0 auto; }
+.part-2 .title { color: #FFFFFF; position: absolute; top: 0; right: 8em ; left: 0;}
+.part-2 .title h2 { font-family:'BigNoodle'; letter-spacing: 4.32px; font-size: 54px; position: absolute; top: 2em;}
+.part-2 .title span { font-family: 'Mulish light'; font-size: 16px; position: absolute; top: 11em; }
+.part-2 .info-prod h2 { color: #FFFFFF; font-size: 16px; font-family: 'Mulish semibold'; position: absolute; top: 22em; margin-left: 4em; }
+.part-2 .weight { position: relative; border: #7E7E7E40; background: #7E7E7E40; padding: 0px 16px; width: 109px; height: 90px; padding-top: 12px;}
+.part-2 .weight span { font-size: 12px; font-family: 'Mulish regular'; height: 16px; position: relative; top: 28px; }
+.part-2 .info-prod .numb-prod { position: absolute; top: 23.5em; margin-left: 4em; gap: 10px; display: flex; color: #FFFFFF; }
+.part-2 .info-prod .numb-prod p { padding-bottom: 4px; margin: 0; font-size: 12px; font-family: 'Mulish light'; }
+.part-2 .info-prod .numb-prod .weight-2 p { font-size: 40px; color: #CFFF04; margin-right: 4px; font-family: 'Bebasnueu'}
+.part-2 .info-prod .numb-prod .weight-2 { display: flex; position: absolute; }
+.part-2 .right { color: #FFFFFF; position: absolute; top: 22em; right: 0; margin-right: 4em;}
+.part-2 .right h2 { font-family: 'Mulish semibold'; font-size: 16px; }
+.part-2 .right span { font-family: 'Mulish light'; font-size: 14px; }
+.part-2 .middle img { position: absolute; top: 24px; right: 0; left: -78px; }
+.part-2 .mes-sage { color: #FFFFFF; margin-top: 15em; text-align: center;}
+.part-2 .mes-sage h1 { font-family: 'BigNoodle'; font-size: 36px; text-align: center; letter-spacing: 2.88px; margin: 0;}
+.part-2 .mes-sage .green { color: #CFFF04; }
+.part-2 .mes-sage span { font-size: 100px; font-family: 'Futura bold italic'; color: #CFFF04;}
+.part-2 .mes-sage h1 p { margin: 0; }
+
+/* Section4 */
+.section-4 { height: 500px; position: relative; background: #596572; }
+.section-4 .content { position: relative; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.section-4 .content h1 { font-family: 'BigNoodle'; font-size: 54px; letter-spacing: 1.08px; color: #04D9FF; margin: 0; margin-bottom: 20px;}
+.section-4 .content p { font-family: 'Mulish regular'; font-size: 16px; color: #FFFFFF; margin: 0; margin-bottom: 30px; }
+.section-4 .content .btn-1 { border: 1px solid #02D6FC; text-decoration: none; padding: 12px; color: #FFFFFF; font-family: 'BigNoodle'; letter-spacing: 1px; cursor: pointer; font-size: 20px;}
+
+/* About */
+.about { background: #1B1F23; }
+.about .all-about .about-content { color: #FFFFFF; text-align: center; position: relative; margin-top: 104px; }
+.about .all-about .about-content h1 { font-family: 'BigNoodle'; font-size: 60px; letter-spacing: 3px; margin: 0; margin-bottom: 20px; padding-top: 1.5em; }
+.about .all-about .about-content p { font-family: 'Mulish light'; font-size: 16px; }
+.about .all-about .about-content img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.about .how-started .left { color: #FFFFFF; margin: auto;}
+.about .how-started .left h1 { font-family: 'BigNoodle'; font-size: 54px; color: #04D9FF; letter-spacing: 1.35px;}
+.about .how-started .left p { font-family: 'Mulish light'; font-size: 16px; letter-spacing: .16px; }
+.about .how-started { display: grid; grid-template-columns: 1fr 1fr; align-items: center; margin: 0 42px; gap: 88px;}
+.about .all-about .overview { color: #FFFFFF; text-align: center; }
+.about .all-about .overview h1 { font-family: 'BigNoodle'; font-size: 54px; color: #04D9FF; letter-spacing: 1.35px;}
+.about .all-about .overview p { font-family: 'Mulish light'; font-size: 16px; letter-spacing: .16px; }
